@@ -1,0 +1,60 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#Me {
+    
+   
+    color: whitesmoke;
+    font-size: 40px;
+    margin-top: 15%;
+}
+
+img.img-fluid{
+    margin-top: 50px;
+ 
+}
+#head{
+    background-color: rgb(10, 14, 20);
+    height: 100vh;
+    width: 100%;
+}
+
+p{
+    color: whitesmoke;
+    font-size: 20px;
+    
+}
+h1{
+    font-weight: bold;
+}
+
+#intro{
+    color: whitesmoke;
+    font-size:80px;
+    font-weight: bold;
+    
+
+}
+
+.img-thumbnail{
+    border-radius: 15px;
+    
+}
+
+#about{
+    padding: 110px 0;
+
+}
+
+@media screen and (max-width:600px) {
+     #intro{
+        font-size: 50px;
+     }
+    
+}
