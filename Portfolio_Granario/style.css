@@ -16,7 +16,7 @@
 
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #FDDA0D;
+    --main-color: #F4BB44;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0,0,0,.2);
 }
@@ -37,7 +37,7 @@ body{
     left: 0;
     width: 100%;
     padding: 2rem 7%;
-    background: gray;
+    background: transparent;
     display: flex;
     align-items: center;
     z-index: 100;
@@ -66,7 +66,6 @@ body{
     width: 100%;
     height: .2rem;
     background: var(--white-color);
-
 }
 
 
@@ -74,14 +73,11 @@ body{
     font-size: 2.4rem;
     color:var(--white-color);
     cursor: pointer;
-
-
 }
 
 section{
     min-height: 100vh;
     padding: 10rem 7% 2rem;
-
 }
 
 .home{
@@ -90,8 +86,7 @@ section{
 }
 
 .home .home-content{
-    max-width: 44rem;
-
+    max-width: 43rem;
 }
 
 .home-content h3{
@@ -102,11 +97,10 @@ section{
 .home-content h1{
     font-size: 4.6rem;
     font-weight: 700;
-
+    margin-bottom: .3rem;
 }
 .home-content p{
-    font-size: 1.6rem;
-    
+    font-size: 1.6rem; 
 }
 .home-content .social-media a{
     display: inline-flex;
@@ -122,9 +116,89 @@ section{
     margin: 2.5rem 1.5rem 3rem 0 ;
     transition:.5s ease;
     color: black;
-
 }
 .home-content .social-media a:hover{
     background: var(--main-color);
     color:var(--white-color);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--main-color);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+}
+
+ .home .hobbies-container{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 708px;
+    height: 708px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.home .hobbies-container .hobbies-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 708px;
+    height: 708px;
+    background: var(--bg-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .hobbies-box .hobbies{
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:var(--main-color);
+    transform: rotate(calc(360deg / 4 * var(--i)));
+    transform-origin: 354px;
+    background: var(--bg-color) ;
+    padding: 13px 0;
+}
+.home .hobbies-box .hobbies :nth-child(1) i{
+    margin-right: 15px;
+}
+.home .hobbies-box .hobbies :nth-child(2),.home .hobbies-box .hobbies :nth-child(4){
+    padding-bottom: 20px;
+
+
+} 
+
+.home .hobbies i{
+    font-size: 3.8rem;
+     
+}
+.home .hobbies h3{
+    font-size: 3.2rem;
+    line-height: 1;
+    font-weight: 600;
+}
+.home .hobbies-box .circle{
+    width: 510px;
+    height: 510px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.home .hobbies-container .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 354px solid var(--main-color);
+    border-right: 354px solid var(--main-color);
+    border-bottom:354px solid var(--main-color);
+    border-left: 354px solid transparent;
+
 }
