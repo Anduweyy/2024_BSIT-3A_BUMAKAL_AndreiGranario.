@@ -1,74 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Granario Portfolio</title>
+    <!-- icon in the tab for the website-->
+    <link rel="icon" href="/favicon_io/favicon.ico" type="image/x-icon">
 
-    <!-- icons -->
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
 
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- header -->
-    <header class="header">
 
-        <a href="#" class="logo"> Duweyy. </a>
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Duweyy.</a>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Sevices</a>
-            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
-
         </nav>
+
         <div class="bx bx-moon" id="darkMode-icon"></div>
-    </header>   
 
-    <!-- home design -->
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
     <section class="home" id="home">
-    <div class="home-content">
-        <h3>Hello, I am</h3>
-        <h1>Andrei Granario</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus numquam iure voluptates tenetur nesciunt quibusdam qui eligendi, dolore voluptatibus, architecto quas possimus repellat natus saepe, expedita cum nostrum eum. Non.</p>
-   
-        <div class="social-media">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-gmail' ></i></a>
-        </div>
-    
-        <a href="#" class="btn">Download CV</a>
-    </div>
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Andrei Granario</h1>
+            <p>
+                I'm a aspiring web developer who loves to create a cool and functional websites
+                about the things that interests me. 
+            </p>
+            <p>I am now currently enrolled at Bicol University Polangui taking the course of BSIT.</p>
 
-    <div class="hobbies-container">
-        <div class="hobbies-box">
-            <div class="hobbies"style="--i:0;">
-                <i class='bx bx-joystick-alt'></i>
-                <h3>Gaming</h3>
+            <div class="social-media">
+                <a href="https://web.facebook.com/deku.senpaii/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.tiktok.com/@arturitotzy?_t=8mwnpoIYPAm&_r=1" target="_blank"><i class='bx bxl-tiktok' ></i></a>
+                <a href="https://www.instagram.com/anduweydurei?igsh=MXg1ODM4NDhiZDVicg==" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/Anduweyy" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
-            <div class="hobbies"style="--i:1;">
+
+            <a href="/CV/MyCv.pdf" download="GranarioCV.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="hobbies-container">
+            <div class="hobbies-box">
+                <div class="hobbies" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="hobbies" style="--i:1;">
+                    <i class='bx bx-game'></i>
+                    <h3>Console Gamer</h3>
+                </div>
+                <div class="hobbies" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Designer</h3>
+                </div>
+                <div class="hobbies" style="--i:3;">
+                    <i class='bx bx-movie'></i>
+                    <h3>Video Editing</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hi there, welcome to my Portfolio website! I'm Andrei,
+                a student from Bicol University Polangui who is studying and taking time to learn more about coding.
+            </h3>
+            <p>
+                This website is consisted of my personal works and simple achievements that can help you understand the capabilities of my skills.
+            </p>
+            <p>
+               I am a very fun and understanding person who is very addicted to video games, anime, and movies.
+               I am not a very hard person to work with so if you have questions just message me in my socials. 
+                
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
                 <i class='bx bx-code-alt'></i>
-                <h3>Programming</h3>
+                <h3>Web Development</h3>
+                <p>Basic skills of HTML, CSS, JS, PHP, C++, JAVA, and MySql.</p>
+                
+                <a href="#" class="btn">Read More</a>
             </div>
-            <div class="hobbies"style="--i:2;">
-                <i class='bx bx-image'></i>
-                <h3>Editing</h3>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Video Editing</h3>
+                <p>Basic Video Editing Skills using the software Capcut and Adobe Premiere.</p>
+                <a href="#" class="btn">Read More</a>
             </div>
-            <div class="hobbies"style="--i:3;">
-                <i class='bx bx-joystick-alt'></i>
-                <h3>Gaming</h3>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Hugs and kisses</h3>
+                <p>Willing to give you moral support whenever you are feeling bad because of coding hehe.</p>
+                <a href="#" class="btn">Read More</a>
             </div>
-            <div class="circle"></div>
         </div>
-        <div class="overlay"></div>
-    </div>  
-    </section> 
+    </section>
 
-    <!-- about section -->
-    <script src="script.js"></script>
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Infographics</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Magazine Page Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Student Management System</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Typography Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio5.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>B-Roll Video Editing</h4>
+                    <p>Click the button to watch.</p>
+                    <a href="https://www.canva.com/design/DAGAVFS1i-U/vZ6U3WG3LPpEnU181CV-Jg/watch?utm_content=DAGAVFS1i-U&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Application Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
